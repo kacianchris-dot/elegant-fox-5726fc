@@ -29,7 +29,12 @@ overflow:hidden;
 }
 
 .hero::after{
-content:””;
+.hero::after{
+position:absolute;
+inset:0;
+background:radial-gradient(circle at center, rgba(102,179,255,.08), transparent 60%);
+pointer-events:none;
+}
 position:absolute;
 inset:0;
 background:radial-gradient(circle at center, rgba(102,179,255,.08), transparent 60%);
